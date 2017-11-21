@@ -6,10 +6,5 @@ pipeline {
         sh 'codecept run --steps'
       }
     }
-    stage('End') {
-      steps {
-        echo 'OK'
-      }
-    }
   }
 }
