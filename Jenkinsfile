@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Test') {
       steps {
-        sh 'codecept run --steps'
+        sh './site/www/vendor/codeception/codeception/codecept run --steps'
       }
     }
   }
