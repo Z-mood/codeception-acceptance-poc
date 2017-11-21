@@ -3,7 +3,9 @@ pipeline {
   stages {
     stage('Test') {
       steps {
-        sh './site/www/vendor/codeception/codeception/codecept run --steps'
+        sh '''cd ./site/www/
+pwd
+./vendor/codeception/codeception/codecept run --steps'''
       }
     }
   }
